@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6em;
+}
+
+.card-preview{
+    background-color: hsl(216, 50%, 16%);
+    width: 250px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline-style: round;
+    border-radius: 10px;  
+}
+
+h1,h2{
+    padding-top: 0.5em;
+    padding-left: 1em;
+    font-family: specimen;
+    font-size: 18px;
+    margin: 1px;
+    padding-bottom: 0.5em;
+}
+
+
+a{
+    color: white;
+}
+
+p{
+    margin: 0;
+}
+.eth-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;  
+    backface-visibility: hidden;
+    /* margin:2e auto; */
+}
+
+.img-container{
+    display: inline-block;
+    width: 100%;
+    margin-top: 1em;
+    position: relative;
+    padding: 0 1.7em;
+    padding-bottom: 1em;
+}
+
+.img-container::before{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    opacity: 0;
+    z-index: 1;
+    background-color:hsl(178, 100%, 50%);
+    width:80%;
+    border-radius: 10px;  
+    margin:0 auto;
+    
+}
+.img-container:hover:before{
+    
+    opacity: 0.3;
+}
+
+
+
+.sub-info{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+.logo{
+    width: 16px;
+    height: 18px;
+    padding-right: 2px;
+}
+.eth-value{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.eth-value > p{
+    color:hsl(178, 100%, 50%);
+}
+
+.countdown{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2.5em;
+    padding-bottom: 1em;
+}
+
+.profile-pic{
+    width: 25px;
+    padding-left: 5px;
+}
+
+.user-profile{
+    padding-top: 5px;
+    display: flex;
+    column-gap: 5px;
+    flex-direction: row;
+}
+
+.profile{
+    padding-left: 5px;
+}
+
+hr{
+    width: 90%;
+}
+
+p,h2{
+    color: hsl(215, 32%, 27%);
+}
