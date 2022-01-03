@@ -19,6 +19,8 @@ body{
     align-items: center;
     outline-style: round;
     border-radius: 10px;  
+    box-shadow: 5px 5px 10px 5px ;   
+    
 }
 
 h2{
@@ -132,6 +134,7 @@ hr{
 
 p,h2{
     color: hsl(215, 32%, 27%);
+    font-weight: 300;
 }
 
 
@@ -140,6 +143,7 @@ p,h2{
     padding-top: 0.5em;
     padding-left: 1em;
     font-family: specimen;
+    font-weight: 400;
     font-size: 18px;
     margin: 1px;
     padding-bottom: 0.5em;
@@ -169,4 +173,34 @@ p,h2{
 
 .eye:hover{
     opacity: 1;
+}
+
+@media (max-width:450px) {
+    .info{
+        font-size: 13px;
+    }
+    
+    .info-name{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 13px;
+    }
+
+    .card-preview{
+        width: 200px;
+        height: 350px;
+    }
+    .eth-value{
+        padding-top: 0.5em;
+        padding-left:0.5em ;
+    }
+    .eth-value > p{
+        font-weight: 100;
+        font-size: 13px;
+    }
+    .countdown{
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+    }
 }
