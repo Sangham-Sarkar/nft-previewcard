@@ -21,7 +21,7 @@ body{
     border-radius: 10px;  
 }
 
-h1,h2{
+h2{
     padding-top: 0.5em;
     padding-left: 1em;
     font-family: specimen;
@@ -73,6 +73,7 @@ p{
 .img-container:hover:before{
     
     opacity: 0.3;
+    margin-bottom: 1em;
 }
 
 
@@ -125,8 +126,47 @@ p{
 
 hr{
     width: 90%;
+    border-color: hsl(215, 32%, 27%);
 }
+
 
 p,h2{
     color: hsl(215, 32%, 27%);
+}
+
+
+.info-name{
+    color: white;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    font-family: specimen;
+    font-size: 18px;
+    margin: 1px;
+    padding-bottom: 0.5em;
+}
+.info-name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.username{
+    color:white ;
+}
+
+.username:hover{
+    color:  hsl(178, 100%, 50%);
+}
+
+.eye{
+    padding-left: 1.2em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.eye:hover{
+    opacity: 1;
 }
