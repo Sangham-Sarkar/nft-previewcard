@@ -161,7 +161,7 @@ p,h2{
 }
 
 .eye{
-    padding-left: 1.2em;
+    margin-left: 1.2em;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -176,6 +176,17 @@ p,h2{
 }
 
 @media (max-width:450px) {
+    .eye{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-left: 0;
+        margin-left: 20px;
+        width: 145px;
+        height: 149px;
+    }
     .info{
         font-size: 13px;
     }
